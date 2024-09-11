@@ -1,29 +1,28 @@
 import React from 'react'
-import styles from './Services.module.css'
 import {FaCode, FaPaintbrush ,  FaDesktop} from 'react-icons/fa6'
 
 function Service() {
   return (
-    <div className={styles.service_con}>
-      <h3 className={styles.service_title}>My Service</h3>
-      <dir className={styles.service_list}>
-        <div className={styles.service_item}>
-            <FaCode/>
-            <h4>Web Development</h4>
+    <div className="bg-white h-[600px] text-center overflow-hidden mt-10">
+    <h3 className="mt-[60px] text-4xl font-bold text-[#0085FF]">My Service</h3>
+    <div className="mt-[110px] flex justify-center flex-wrap gap-x-[50px] gap-y-[20px]">
+        <div className="w-[250px] flex flex-col items-center">
+            <FaCode className="w-[80px] h-[80px] text-[#0085FF]" />
+            <h4 className="text-[#0085FF] text-2xl font-bold mt-[25px]">Web Development</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae enim consectetur sapiente necessitatibus neque eos ipsa ullam minima nulla.</p>
         </div>
-        <div className={styles.service_item}>
-            <FaPaintbrush/>
-            <h4>Web Design</h4>
+        <div className="w-[250px] flex flex-col items-center">
+            <FaPaintbrush className="w-[80px] h-[80px] text-[#0085FF]" />
+            <h4 className="text-[#0085FF] text-2xl font-bold mt-[25px]">Web Design</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae enim consectetur sapiente necessitatibus neque eos ipsa ullam minima nulla.</p>
         </div>
-        <div className={styles.service_item}>
-            <FaDesktop/>
-            <h4>Front-end Consulting</h4>
+        <div className="w-[250px] flex flex-col items-center">
+            <FaDesktop className="w-[80px] h-[80px] text-[#0085FF]" />
+            <h4 className="text-[#0085FF] text-2xl font-bold mt-[25px] w-[350px]  ">Front-end Consulting</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae enim consectetur sapiente necessitatibus neque eos ipsa ullam minima nulla.</p>
         </div>
-      </dir>
     </div>
+</div>
   )
 }
 

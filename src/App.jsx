@@ -1,9 +1,7 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import AnimatedCursor from 'react-animated-cursor'
-
+import './index.css'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Abilitys from './components/Abilitys/Abilitys'
@@ -13,6 +11,7 @@ import Numbers from './components/Numbers/Numbers'
 import Testimonials from './components/Testimonials/Testimonials'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import ChatBot from './components/Chatbot/ChatBot'
 
 
 function App() {
@@ -44,6 +43,7 @@ function App() {
         '.link'
       ]}
     />
+
       <Navbar/>
       <Hero/>
       <Abilitys/>
@@ -52,6 +52,7 @@ function App() {
       <Numbers/>
       <Testimonials/>
       <Contact/>
+      <ChatBot />
       <Footer/>
     </>
   )

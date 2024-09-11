@@ -1,48 +1,65 @@
-import React from 'react'
-import styles from './Hero.module.css'
-import { FaGithub,FaLinkedin,FaFacebookF } from "react-icons/fa6";
-import { TypeAnimation } from 'react-type-animation';
-import Tilt from 'react-parallax-tilt';
+import React from "react";
+import { FaGithub, FaLinkedin, FaFacebookF } from "react-icons/fa6";
+import { TypeAnimation } from "react-type-animation";
+import Tilt from "react-parallax-tilt";
+import proImg from "../img/proImg.jpeg";
 
 function Hero() {
   return (
-    <div className={styles.hero_wrapper}>
-        <div className={styles.container}>
-            <dir className={styles.hero_con}>
-                <div className={styles.hero_info}>
-                    <p className={styles.text_1}>What about me.</p>
-                    <h3 className={styles.text_2}>Sikarin Tanasumpunkul</h3>
-                    <p className={styles.text_3}>
-                        <span className={{marginRight:'10px'}}>I’m a </span>
-                        <TypeAnimation
-                        sequence={[
-                           'Front-end Developer',
-                            1000, 
-                            'Web Developer',
-                            1000,
-                         ]}
-                        speed={50}
-                        repeat={Infinity}
-                         /> 
-                    </p>
-                    <p className={styles.text_4}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga fugiat commodi <br/>quas cupiditate minus dolore nulla eos accusantium labore explicabo.
-                    </p>
-                    <ul className={styles.hero_social}>
-                       <li><a href="#"><FaGithub/></a></li>
-                        <li><a href="#"><FaLinkedin/></a></li>
-                        <li><a href="#"><FaFacebookF/></a></li>
-                    </ul>
-                </div>
+    <div className="hero_wrapper bg-gray-100 py-10">
+      <div className="container mx-auto">
+        <div className="font-medium flex flex-col md:flex-row items-center justify-between">
+          <div className="hero_info text-center md:text-left">
+            <p className="text-3xl text-gray-700 font-medium">What about me.</p>
+            <h3 className="text-4xl font-bold text-gray-900">
+              Sikarin Tanasumpunkul
+            </h3>
+            <p className="text-xl my-4">
+              <span className="mr-2">I’m a</span>
+              <TypeAnimation
+                sequence={["Front-end Developer", 1000, "Web Developer", 1000]}
+                speed={50}
+                repeat={Infinity}
+              />
+            </p>
+            <p className="text-gray-600 mb-6 font-medium">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+              fugiat commodi <br />
+              quas cupiditate minus dolore nulla eos accusantium labore
+              explicabo.
+            </p>
+            <ul className="hero_social flex space-x-4 ">
+              <li>
+                <a href="#">
+                  <FaGithub className="text-[40px] text-gray-800 hover:text-gray-600" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FaLinkedin className="text-[40px] text-blue-700 hover:text-blue-500" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FaFacebookF className="text-[40px] text-blue-600 hover:text-blue-400" />
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
-                     <div className={styles.hero_img}> </div>
-                </Tilt>
-                
-            </dir>
+          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
+            <div className="hero_img w-[300px] h-[300px] rounded-full mx-auto md:mx-0 mt-8 md:mt-0">
+              <img
+                src={proImg}
+                alt="Profile"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
+          </Tilt>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

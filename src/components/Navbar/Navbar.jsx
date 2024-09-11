@@ -1,52 +1,81 @@
-import React , { useState }from 'react'
-import styles from './Navbar.module.css'
-import { FaBars } from 'react-icons/fa6'
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa6";
 
 function Navbar() {
+  const [isToggled, setToggled] = useState(false);
 
-  const [isToggled , setToggled] = useState(false);
-  
-  function handleToggle(){
-    setToggled(!isToggled) //false
+  function handleToggle() {
+    setToggled(!isToggled); 
   }
-
 
   return (
     <nav>
-       <div className={styles.container}>
-            <div className={styles.nav_con}>
-                <div className={styles.logo}>
-                    <a href="#">My Profile</a>
-                </div>
+      <div className="bg-red-400 relative overflow-hidden">
+        <div className="max-w-[1170px] mx-auto flex justify-between items-center h-[60px]">
+          <div className="font-bold text-white">
+            <a href="#">My Profile</a>
+          </div>
 
-                <ul>
-                   <li><a href='#'>Skill</a></li> 
-                    <li><a href='#'>Portfolio</a></li>
-                    <li><a href='#'>Contact</a></li>
-                </ul>
+          <ul className="hidden md:flex list-none space-x-8 font-semibold">
+            <li>
+              <a href="#" className="text-white no-underline ">
+                Skill
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-white no-underline">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-white no-underline">
+                Contact
+              </a>
+            </li>
+          </ul>
 
-                <div className={styles.button}>
-                    <a href="#">Hire Me</a>
-                </div>
+          <div className="hidden md:flex w-[100px] h-[35px] bg-white justify-center items-center rounded-[20px] cursor-pointer transition duration-300 hover:shadow-[0_0_20px_0_rgba(0,0,0,0.3)]">
+            <a href="#" className="text-[#333] no-underline">
+              About Me
+            </a>
+          </div>
+
+          <FaBars
+            className="text-white md:hidden absolute top-[30px] right-[20px]"
+            onClick={handleToggle}
+          />
+        </div>
+
+        {/* Mobile menu */}
+        {isToggled && (
+          <>
+            <ul className="md:hidden list-none mt-4 space-y-4">
+              <li>
+                <a href="#" className="text-white no-underline">
+                  Skill
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white no-underline">
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white no-underline">
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <div className="md:hidden w-[100px] h-[35px] bg-white flex justify-center items-center rounded-[20px] cursor-pointer transition duration-300 hover:shadow-[0_0_20px_0_rgba(0,0,0,0.3)] mx-[30px] mb-[20px]">
+              <a href="#" className="text-[#333] no-underline">
+                Click me
+              </a>
             </div>
-
-            {/*  mobile menu*/}
-            <FaBars className={styles.bars} onClick={handleToggle}/>
-            {isToggled ?(
-              <>
-                <ul className={styles.mobile_menu}>
-                   <li><a href='#'>Skill</a></li> 
-                    <li><a href='#'>Portfolio</a></li>
-                    <li><a href='#'>Contact</a></li>
-                </ul>
-                <dir className={styles.mobile_button}>
-                  <a href="">Click me</a>
-                </dir>
-              </>
-            ): null}
-       </div>
+          </>
+        )}
+      </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
