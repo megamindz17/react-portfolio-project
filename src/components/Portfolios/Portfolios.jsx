@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 
 function Portfolios() {
   return (
-    <div className="max-w-[1170px] h-auto mx-auto overflow-hidden">
+    <div className=" max-w-[1170px] h-auto mx-auto overflow-hidden">
       <h3 className="text-4xl font-bold mt-[35px] text-center">Portfolios</h3>
       <div className="flex flex-row flex-wrap justify-center items-center gap-[55px] mt-[50px] sm:grid-cols-1 sm:gap-y-[20px] sm:pt-[20px]">
         <div className="flex flex-col items-center">

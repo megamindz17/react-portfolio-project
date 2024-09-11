@@ -20,7 +20,7 @@ function Hero() {
                 sequence={["Front-end Developer", 1000, "Web Developer", 1000]}
                 speed={50}
                 repeat={Infinity}
-              />
+              /> 
             </p>
             <p className="text-gray-600 mb-6 font-medium">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
@@ -28,7 +28,7 @@ function Hero() {
               quas cupiditate minus dolore nulla eos accusantium labore
               explicabo.
             </p>
-            <ul className="hero_social flex space-x-4 ">
+            <ul className="flex justify-center md:flex-row  hero_social space-x-4 ">
               <li>
                 <a href="#">
                   <FaGithub className="text-[40px] text-gray-800 hover:text-gray-600" />
