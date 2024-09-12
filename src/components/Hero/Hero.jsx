@@ -6,7 +6,7 @@ import proImg from "../img/proImg.jpeg";
 
 function Hero() {
   return (
-    <div className="hero_wrapper bg-gray-100 py-10">
+    <div className="hero_wrapper bg-bright py-10">
       <div className="container mx-auto">
         <div className="font-medium flex flex-col md:flex-row items-center justify-between">
           <div className="hero_info text-center md:text-left">
@@ -20,13 +20,14 @@ function Hero() {
                 sequence={["Front-end Developer", 1000, "Web Developer", 1000]}
                 speed={50}
                 repeat={Infinity}
-              /> 
+              />
             </p>
             <p className="text-gray-600 mb-6 font-medium">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-              fugiat commodi <br />
-              quas cupiditate minus dolore nulla eos accusantium labore
-              explicabo.
+              Overview A modern and responsive personal web profile built using
+              React and Tailwind CSS. It showcases personal details,
+              <br />
+              programming skills, a portfolio, and contact information in a
+              clean, professional layout.
             </p>
             <ul className="flex justify-center md:flex-row  hero_social space-x-4 ">
               <li>

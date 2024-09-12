@@ -1,5 +1,7 @@
 import React from "react";
-import { FaSquareJs, FaReact, FaSass, FaGitAlt, FaNode } from "react-icons/fa6";
+import { FaSquareJs, FaReact, FaGitAlt, FaNode } from "react-icons/fa6";
+import { SiTailwindcss } from "react-icons/si";
+
 
 function Abilitys() {
   return (
@@ -17,7 +19,7 @@ function Abilitys() {
               <FaReact className="w-[80px] h-[80px]" />
             </li>
             <li className="mx-[20px] my-[10px]">
-              <FaSass className="w-[80px] h-[80px]" />
+              <SiTailwindcss className="w-[80px] h-[80px]" />
             </li>
             <li className="mx-[20px] my-[10px]">
               <FaGitAlt className="w-[80px] h-[80px]" />

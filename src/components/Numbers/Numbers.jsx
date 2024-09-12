@@ -4,7 +4,7 @@ import VisibilitySensor from "react-visibility-sensor";
 
 function Numbers() {
   return (
-    <div className="mt-[80px] h-auto bg-[#D6CCBA] flex justify-center items-center text-center py-[120px]">
+    <div className=" h-auto bg-red-400  flex flex-col justify-center items-center text-center gap-10 py-[120px] sm:flex-row flex-wrap md:flex-row  lg:flex-row xl:flex-row 2xl:flex-row">
       <div className="text-white mx-[50px]">
         <h3 className="text-[48px] font-bold">
           <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>

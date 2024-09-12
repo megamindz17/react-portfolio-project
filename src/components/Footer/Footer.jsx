@@ -1,9 +1,8 @@
 import React from 'react'
-import styles from  './Footer.module.css'
 
 function Footer() {
   return (
-    <footer>
+    <footer className='h-[50px] bg-bright flex justify-center items-center '>
         <p>Copyright © 2023. All Rights Reserved.</p>
     </footer>
   )

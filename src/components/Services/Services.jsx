@@ -5,7 +5,7 @@ import { FaPaintbrush } from "react-icons/fa6";
 
 function Service() {
   return (
-    <div className="flex flex-col   h-full text-center overflow-hidden mt-10 py-10 ">
+    <div className=" bg-bright flex flex-col   h-full text-center overflow-hidden  py-10 ">
       <h3 className="mt-[60px] text-4xl font-bold text-[#0085FF]">My Service</h3>
       <div className="flex flex-col md:flex-row justify-center items-center mt-[100px]  gap-x-[50px] gap-y-[50px]">
         <div className="w-[250px] flex flex-col justify-center items-center ">

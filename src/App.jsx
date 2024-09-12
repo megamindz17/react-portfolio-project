@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-    <AnimatedCursor
+    {/* <AnimatedCursor
       innerSize={8}
       outerSize={8}
       color='0, 65, 125'
@@ -42,7 +42,7 @@ function App() {
         'button',
         '.link'
       ]}
-    />
+    /> */}
 
       <Navbar/>
       <Hero/>
