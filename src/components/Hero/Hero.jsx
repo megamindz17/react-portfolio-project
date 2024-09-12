@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaFacebookF } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 import Tilt from "react-parallax-tilt";
 import proImg from "../img/proImg.jpeg";
@@ -42,7 +42,7 @@ function Hero() {
               </li>
               <li>
                 <a href="#">
-                  <FaFacebookF className="text-[40px] text-blue-600 hover:text-blue-400" />
+                  <FaFacebook className="text-[40px] text-blue-600 hover:text-blue-400" />
                 </a>
               </li>
             </ul>
