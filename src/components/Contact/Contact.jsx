@@ -6,7 +6,7 @@ function Contact() {
     <div className=" w-full h-auto bg-red-400 text-white p-5   xl:gap-10  xl:w-1/2  2xl:w-full 2xl:px-20  ">
       <div className="flex flex-col gap-5 xl:flex-row xl:gap-10 2xl:w-full">
         <div className="flex flex-col gap-5 xl:w-1/2">
-          <h3 className="text-2xl xl:text-3xl font-bold">Get in touch</h3>
+          <h3 className="text-2xl xl:text-3xl font-bold">Contact Me</h3>
           <p className="text-sm xl:text-base xl:w-1/2">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga eius
             eligendi in laboriosam delectus ipsum inventore alias dolorem

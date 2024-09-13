@@ -9,6 +9,15 @@ function Hero() {
     <div className="hero_wrapper bg-bright py-10">
       <div className="container mx-auto">
         <div className="font-medium flex flex-col md:flex-row items-center justify-between">
+          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
+            <div className="hero_img w-[300px] h-[300px] rounded-full mx-auto md:mx-0 mt-8 md:mt-0">
+              <img
+                src={proImg}
+                alt="Profile"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
+          </Tilt>
           <div className="hero_info text-center md:text-left">
             <p className="text-3xl text-gray-700 font-medium">What about me.</p>
             <h3 className="text-4xl font-bold text-gray-900">
@@ -22,7 +31,7 @@ function Hero() {
                 repeat={Infinity}
               />
             </p>
-            <p className="text-gray-600 mb-6 font-medium">
+            <p className="text-gray-600 mb-6 font-semibold">
               Overview A modern and responsive personal web profile built using
               React and Tailwind CSS. It showcases personal details,
               <br />
@@ -47,16 +56,6 @@ function Hero() {
               </li>
             </ul>
           </div>
-
-          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
-            <div className="hero_img w-[300px] h-[300px] rounded-full mx-auto md:mx-0 mt-8 md:mt-0">
-              <img
-                src={proImg}
-                alt="Profile"
-                className="w-full h-full object-cover rounded-full"
-              />
-            </div>
-          </Tilt>
         </div>
       </div>
     </div>
