@@ -11,6 +11,10 @@ export default {
       },
       colors: {
         bright: '#fdf2e9',
+        primary:'#070F2B',
+        secondary:"#1B1A55",
+        accent:'#535C91',
+        dark:"#20262E"
       },
     },
   },

@@ -5,7 +5,7 @@ import { SiTailwindcss } from "react-icons/si";
 
 function Abilitys() {
   return (
-    <div className="bg-red-400 w-auto py-10 text-white text-center overflow-hidden xs:flex xs:flex-col xs:justify-center xs:items-center">
+    <div className=" bg-primary w-auto py-10 text-white text-center overflow-hidden xs:flex xs:flex-col xs:justify-center xs:items-center">
       <div className="xs:w-full h-full flex flex-col justify-center items-center">
         <h3 className="mt-[40px] text-4xl font-bold text-white">
           My Skill Set

@@ -2,7 +2,7 @@ import React from "react";
 
 function Testimonials() {
   return (
-    <div className="flex flex-col h-auto bg-bright text-center  w-full mx-auto overflow-hidden pb-10 ">
+    <div className="flex flex-col h-auto bg-primary text-center  w-full mx-auto overflow-hidden p-10 text-white ">
       <h3 className="mt-[55px] text-[32px] font-bold">Testimonials</h3>
       <div className="flex flex-col justify-center items-center gap-10 mt-[80px] sm:flex-row  md:flex-row lg:flex-row xl:flex-row 2xl:flex-row">
         <div className="flex flex-col justify-center items-center  w-[320px] mx-[30px]">

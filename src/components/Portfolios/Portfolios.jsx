@@ -6,8 +6,8 @@ import javascriptCer from "../img/frontend.jpg";
 
 function Portfolios() {
   return (
-    <div className="pb-10 bg-bright max-w-[1980px] h-auto mx-auto overflow-hidden xl:w-full">
-      <h3 className="text-4xl font-bold mt-[35px] text-center">Certificates</h3>
+    <div className="pb-10 bg-primary max-w-[1980px] h-auto mx-auto overflow-hidden xl:w-full">
+      <h3 className="text-4xl font-bold mt-[35px] text-center text-white">Certificates</h3>
       <div className="flex flex-row flex-wrap  justify-center items-center gap-[55px] mt-[50px] sm:grid-cols-1 sm:gap-y-[20px] sm:pt-[20px]   xl:flex xl:flex-rows xl:justify-center xl:items-center">
         <div className="flex flex-col items-center">
           <Tilt scale={1.1} transitionSpeed={2500} tiltReverse={true}>
@@ -17,7 +17,7 @@ function Portfolios() {
               className="w-[350px] h-[300px] rounded-[20px] object-content"
             />
           </Tilt>
-          <p className="text-sm font-semibold mt-[18px] text-center">
+          <p className="text-sm font-semibold mt-[18px] text-center text-white">
             HTML CSS Javascript
           </p>
         </div>
@@ -29,7 +29,7 @@ function Portfolios() {
               className="w-[350px] h-[300px] rounded-[20px] object-content"
             />
           </Tilt>
-          <p className="text-sm font-semibold mt-[10px] text-center">Certificate SQL</p>
+          <p className="text-sm font-semibold mt-[10px] text-center  text-white">Certificate SQL</p>
         </div>
         <div className="flex flex-col items-center">
           <Tilt scale={1.1} transitionSpeed={2500} tiltReverse={true}>
@@ -39,7 +39,7 @@ function Portfolios() {
               className="w-[350px] h-[300px] rounded-[20px] object-content"
             />
           </Tilt>
-          <p className="text-sm font-semibold mt-[10px] text-center">Basic Javascript for Frontend</p>
+          <p className="text-sm font-semibold mt-[10px] text-center  text-white">Basic Javascript for Frontend</p>
         </div>
         {/* <div className="flex flex-col items-center">
           <Tilt scale={1.1} transitionSpeed={2500} tiltReverse={true}>
