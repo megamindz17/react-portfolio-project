@@ -22,8 +22,8 @@ function Service() {
         </div>
         <div className="w-[250px] flex flex-col justify-center items-center ">
           <FaDesktop className="w-[80px] h-[80px] text-[#0085FF]" />
-          <h4 className="text-[#0085FF] text-2xl font-bold mt-[25px] w-[650px]">Front-end Consulting</h4>
-          <p className='font-medium text-[16px] mt-3 text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae enim consectetur sapiente necessitatibus neque eos ipsa ullam minima nulla.</p>
+          <h4 className="text-[#0085FF] text-2xl font-bold mt-[25px] w-[650px]">Quality Assurance Tester</h4>
+          <p className='font-medium text-[16px] mt-3 text-white'>Tested application functionalities following predefined test cases to ensure smooth operation and user interface consistency.</p>
         </div>
       </div>
     </div>
