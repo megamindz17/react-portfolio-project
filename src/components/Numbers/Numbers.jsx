@@ -11,7 +11,7 @@ function Numbers() {
             {({ isVisible }) => (
               <div>
                 {isVisible ? (
-                  <CountUp start={0} end={100} duration={5} />
+                  <CountUp start={0} end={3} duration={5} />
                 ) : null}
                 +
               </div>
@@ -51,7 +51,7 @@ function Numbers() {
             {({ isVisible }) => (
               <div>
                 {isVisible ? (
-                  <CountUp start={0} end={100} duration={5} />
+                  <CountUp start={0} end={30} duration={5} />
                 ) : null}
                 +
               </div>

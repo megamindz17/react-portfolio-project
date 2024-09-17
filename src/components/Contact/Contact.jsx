@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope } from "react-icons/fa6";
 
 function Contact() {
   return (
-    <div className=" w-full h-auto bg-dark text-white p-5   xl:gap-10  xl:w-1/2  2xl:w-full 2xl:px-20  ">
+    <div className=" w-full h-auto bg-dark text-white p-5   xl:gap-10  xl:px-9  2xl:w-full  ">
       <div className="flex flex-col gap-5 xl:flex-row xl:gap-10 2xl:w-full">
         <div className="flex flex-col gap-5 xl:w-1/2">
           <h3 className="text-2xl xl:text-3xl font-bold">Contact Me</h3>

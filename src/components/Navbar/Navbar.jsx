@@ -22,7 +22,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="text-white no-underline hover:text-sky-700 hover:bg-transparent  "
+                className="text-white no-underline hover:text-sky-700 hover:bg-transparent   "
               >
                 Skill
               </a>
@@ -46,7 +46,7 @@ function Navbar() {
           </ul>
 
           <div className="hidden md:flex w-[100px] h-[35px] bg-white justify-center items-center rounded-[20px] cursor-pointer transition duration-300 hover:bg-sky-600  hover:shadow-[0_0_20px_0_rgba(0,0,0,0.3)]">
-            <a href="#" className="text-[#817e7e] no-underline font-semibold  ">
+            <a href="#" className="text-[#817e7e] no-underline font-semibold hover:scale-105 transition-transform duration-300 ">
               About Me
             </a>
           </div>
@@ -88,7 +88,7 @@ function Navbar() {
             <div className="md:hidden w-[100px] mx-5 h-[35px] bg-white flex justify-center items-center rounded-[10px] cursor-pointer transition-opacity duration-1000 opacity-100 hover:bg-sky-600 hover:shadow-[0_0_20px_0_rgba(0,0,0,0.3)] mt-3 mb-[20px]">
               <a
                 href="#"
-                className="text-[#333] font-semibold no-underline hover:text-sky-700"
+                className="text-[#333] font-semibold no-underline hover:text-sky-700 hover:scale-105 transition-transform duration-300"
               >
                 About me
               </a>
